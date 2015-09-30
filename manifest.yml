@@ -1,4 +1,4 @@
 applications:
-  - name: dashboard
+  - name: dashboardrequest
 path: dashboard.war
 buildpack: https://github.com/cloudfoundry/java-buildpack.git
