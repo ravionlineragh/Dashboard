@@ -13,5 +13,3 @@ deploy:
   skip_cleanup: true
   on:
     repo: ravionlineragh/dashboard
-    
-  
