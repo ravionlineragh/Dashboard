@@ -33,10 +33,10 @@ public class CheckStatusAction {
 	{
 		if(Integer.parseInt(this.request)%10 >= 5 )
 		{
-			this.setMessage(" The value "+Integer.parseInt(this.request)%10+" is greater than 5");
+			this.setMessage(" The value "+Integer.parseInt(this.request)+" is greater than 5");
 			return "success";	
 		}
-		this.setMessage(" The value "+Integer.parseInt(this.request)%10+" is lesser than 5");
+		this.setMessage(" The value "+Integer.parseInt(this.request)+" is lesser than 5");
 		return "failure";
 		
 	}
