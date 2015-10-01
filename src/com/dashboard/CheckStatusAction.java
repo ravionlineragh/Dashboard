@@ -61,31 +61,31 @@ public class CheckStatusAction {
 			 break;
 		 case 2:
 			 setImageid("The request is at the stage 2");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage2.jpg\" height=\"75%\" width=\"75%\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage2.jpg\" height=\"75%\" width=\"80%\">");
 			 break;
 		 case 3:
 			 setImageid("The request is at the stage 3");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage3.jpg\" height=\"75%\" width=\"75%\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage3.jpg\" height=\"75%\" width=\"80%\">");
 			 break;
 		 case 4:
 			 setImageid("The request is at the stage 4");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage4.jpg\" height=\"75%\" width=\"75%\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage4.jpg\" height=\"75%\" width=\"80%\">");
 			 break;
 		 case 5:
 			 setImageid("The request is at the stage 5");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage5.jpg\" height=\"75%\" width=\"75%\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage5.jpg\" height=\"75%\" width=\"80%\">");
 			 break;
 		 case 6:
 			 setImageid("The request is at the stage 6");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage6.jpg\" height=\"75%\" width=\"75%\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage6.jpg\" height=\"75%\" width=\"80%\">");
 			 break;
 		 case 0:
 			 setImageid("The request is completed");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage7.jpg\" height=\"75%\" width=\"75%\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage7.jpg\" height=\"75%\" width=\"80%\">");
 			 break;
 		 default:
 			 setImageid("The request is yet to start");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage0.jpg\" height=\"75%\" width=\"75%\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage0.jpg\" height=\"75%\" width=\"80%\">");
 			 break;
 		}
 		return "success";
