@@ -39,40 +39,53 @@ public class CheckStatusAction {
 	}
 
 	public String execute()
-	{
+	{		
+		setMessage("");
+		if(this.request.isEmpty())
+		{
+			setMessage("The request id is empty");
+			return "failure";
+		}
+		try{
+			Integer.parseInt(this.request);
+		}catch(NumberFormatException nfe)
+		{
+			setMessage("The request id is not a valid number");
+			return "failure";
+		}
 		switch(Integer.parseInt(this.request)%7)
 		{
 		 case 1:
 			 setImageid("The request is at the stage 1");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage1.jpg\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage1.jpg\" height=\"48px\" width=\"641px\">");
 			 break;
 		 case 2:
 			 setImageid("The request is at the stage 2");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage2.jpg\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage2.jpg\" height=\"48px\" width=\"641px\">");
 			 break;
 		 case 3:
 			 setImageid("The request is at the stage 3");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage3.jpg\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage3.jpg\" height=\"48px\" width=\"641px\">");
 			 break;
 		 case 4:
 			 setImageid("The request is at the stage 4");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage4.jpg\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage4.jpg\" height=\"48px\" width=\"641px\">");
 			 break;
 		 case 5:
 			 setImageid("The request is at the stage 5");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage5.jpg\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage5.jpg\" height=\"48px\" width=\"641px\">");
 			 break;
 		 case 6:
 			 setImageid("The request is at the stage 6");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage6.jpg\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage6.jpg\" height=\"48px\" width=\"641px\">");
 			 break;
 		 case 0:
 			 setImageid("The request is completed");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage7.jpg\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage7.jpg\" height=\"48px\" width=\"641px\">");
 			 break;
 		 default:
 			 setImageid("The request is yet to start");
-			 setMessage("<img alt=\"request is at stage \" src=\"images/stage0.jpg\">");
+			 setMessage("<img alt=\"request is at stage \" src=\"images/stage0.jpg\" height=\"48px\" width=\"641px\">");
 			 break;
 		}
 		return "success";

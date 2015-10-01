@@ -7,7 +7,7 @@
 	<package name="dashboard" extends="struts-default">
 		<action name="checkStatus" class="com.dashboard.CheckStatusAction" method="execute">
 			<result name="success">/statussuccess.jsp</result>
-			<result name="failure">/statusfail.jsp</result>
+			<result name="failure">/main.jsp</result>
 		</action>
 	</package>
 </struts>
